@@ -1,0 +1,133 @@
+
+.meal-form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 18px;
+  background: #f5f8f5;
+}
+
+.meal-form-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.meal-form-header {
+  margin-bottom: 28px;
+}
+
+.meal-form-header h1 {
+  color: #24834a;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.meal-form-header p {
+  color: #68756c;
+  line-height: 1.5;
+}
+
+.meal-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.meal-form-group label {
+  margin-bottom: 8px;
+  color: #34443a;
+  font-weight: 600;
+}
+
+.meal-form-group input,
+.meal-form-group textarea,
+.meal-form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8e3da;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+}
+
+.meal-form-group textarea {
+  resize: vertical;
+}
+
+.meal-form-group input:focus,
+.meal-form-group textarea:focus,
+.meal-form-group select:focus {
+  border-color: #24834a;
+  box-shadow: 0 0 0 2px rgba(36, 131, 74, 0.12);
+}
+
+.meal-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.meal-form-actions button,
+.cancel-meal-button {
+  padding: 13px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.meal-form-actions button {
+  border: none;
+  background: #24834a;
+  color: #ffffff;
+}
+
+.meal-form-actions button:hover {
+  background: #196638;
+}
+
+.meal-form-actions button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cancel-meal-button {
+  border: 1px solid #d8e3da;
+  color: #526057;
+  background: #ffffff;
+}
+
+.cancel-meal-button:hover {
+  background: #f0f7f2;
+}
+
+.meal-form-error {
+  color: #c62828;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 480px) {
+  .meal-form-card {
+    padding: 25px 18px;
+  }
+
+  .meal-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .meal-form-actions button,
+  .cancel-meal-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+﻿# Dependências
+node_modules/
+**/node_modules/
+
+# Arquivos de ambiente e informações secretas
+.env
+.env.*
+!.env.example
+
+# Bancos de dados locais
+*.db
+*.db-journal
+
+# Arquivos gerados e builds
+dist/
+**/dist/
+.vite/
+**/.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

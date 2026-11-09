@@ -1,0 +1,152 @@
+
+.edit-meal-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 18px;
+  background: #f5f8f5;
+}
+
+.edit-meal-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.edit-meal-header {
+  margin-bottom: 28px;
+}
+
+.edit-meal-header h1 {
+  color: #24834a;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.edit-meal-header p {
+  color: #68756c;
+  line-height: 1.5;
+}
+
+.edit-meal-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.edit-meal-group label {
+  margin-bottom: 8px;
+  color: #34443a;
+  font-weight: 600;
+}
+
+.edit-meal-group input,
+.edit-meal-group textarea,
+.edit-meal-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8e3da;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+}
+
+.edit-meal-group textarea {
+  resize: vertical;
+}
+
+.edit-meal-group input:focus,
+.edit-meal-group textarea:focus,
+.edit-meal-group select:focus {
+  border-color: #24834a;
+  box-shadow: 0 0 0 2px rgba(36, 131, 74, 0.12);
+}
+
+.edit-meal-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.edit-meal-actions button,
+.back-meal-button {
+  padding: 13px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.back-meal-button {
+  border: 1px solid #d8e3da;
+  color: #526057;
+  background: #ffffff;
+}
+
+.back-meal-button:hover {
+  background: #f0f7f2;
+}
+
+.delete-meal-button {
+  border: none;
+  color: #ffffff;
+  background: #c62828;
+}
+
+.delete-meal-button:hover {
+  background: #a51e1e;
+}
+
+.save-meal-button {
+  border: none;
+  color: #ffffff;
+  background: #24834a;
+}
+
+.save-meal-button:hover {
+  background: #196638;
+}
+
+.save-meal-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.edit-meal-error {
+  margin-bottom: 18px;
+  color: #c62828;
+  font-size: 14px;
+}
+
+.edit-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #24834a;
+  font-size: 18px;
+}
+
+@media (max-width: 520px) {
+  .edit-meal-card {
+    padding: 25px 18px;
+  }
+
+  .edit-meal-actions {
+    flex-direction: column;
+  }
+
+  .edit-meal-actions button,
+  .edit-meal-actions a {
+    width: 100%;
+  }
+}
